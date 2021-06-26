@@ -1,7 +1,7 @@
 <template>
   <div :class="`grid grid-theme-${theme || 'blocks'}`">
     <intersection-observer v-if="items.length === 0" @view="$emit('atEnd')" />
-    <div class="columns items is-multiline">
+    <div class="columns items is-multiline rtl-grid">
       <div
         v-for="(item, index) in itemsComputed"
         :key="item.title ? item.title : index"
@@ -53,6 +53,9 @@ export default {
 <style lang="scss" scoped>
 .grid {
   min-height: 150px;
+}
+.grid .rtl-grid {
+  flex-direction: row-reverse;
 }
 .column {
   flex-basis: auto;
