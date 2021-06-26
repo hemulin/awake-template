@@ -17,7 +17,7 @@
     </div>
     <div class="card-content">
       <div class="media">
-        <div class="media-content">
+        <div class="media-content has-text-right">
           <nuxt-link :to="link">
             <h3
               :class="
