@@ -17,13 +17,14 @@
     </div>
     <div class="card-content">
       <div class="media">
-        <div class="media-content has-text-right">
+        <div class="media-content">
           <nuxt-link :to="link">
             <h3
               :class="
                 `title
                 is-5
                 has-text-weight-light
+                has-text-right
                 ${title ? '' : 'empty-content-placeholder'}`
               "
             >
@@ -33,6 +34,7 @@
               :class="{
                 subtitle: true,
                 'is-6': true,
+                'has-text-right': true,
                 'empty-content-placeholder': !$slots.default
               }"
             >
