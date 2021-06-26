@@ -89,7 +89,7 @@ export default {
   position: relative;
   height: 1em;
   &:before {
-    transform-origin: left;
+    transform-origin: right;
     content: '';
     background: #eee;
     width: 100%;
