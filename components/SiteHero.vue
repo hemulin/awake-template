@@ -1,5 +1,5 @@
 <template>
-  <section :class="`hero is-medium hero-theme-${computedTheme}`">
+  <section :class="`hero is-large hero-theme-${computedTheme}`">
     <img
       class="hero-bg-img"
       :src="responsiveImage.src"
@@ -74,7 +74,7 @@ export default {
   margin: 0;
 }
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 0 !important;
 }
 .under-subtitle {

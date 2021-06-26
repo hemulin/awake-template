@@ -9,10 +9,11 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
-  featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  siteName: 'Masaot',
+  tagline: 'החיים הם דברים שקורים כשאתה בכלל לא מתכוון',
+  // tagline: "Life is what happens to you while you're busy making other plans",
+  featureImage: '/uploads/main-pic.png',
+  logo: '/main-logo.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
@@ -29,16 +30,6 @@ export default {
     {
       name: 'Categories',
       link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
     }
   ],
   hero: {
@@ -59,14 +50,14 @@ export default {
 
   // Disqus
   disqus: {
-    on: true,
+    on: false,
     loadingStrategy: 'button', // Options: onload, lazy, button
     siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
   newsletter: {
-    on: true,
+    on: false,
     heading: 'Subscribe to Our Newsletter',
     btnText: 'Subscribe',
     // Can be the form action on a mail chimp form, a hubspot form,

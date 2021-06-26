@@ -13,6 +13,7 @@
           :alt="$siteConfig.siteName"
           class="logo"
         />
+        <p>Masaot</p>
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -69,6 +70,12 @@ export default {
     display: none;
   }
 }
+
+.navbar-brand p {
+  margin-left: 0.6rem;
+  font-size: 1.6rem;
+}
+
 .navbar-burger {
   height: auto;
 }
