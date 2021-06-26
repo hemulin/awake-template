@@ -1,23 +1,23 @@
 <template>
   <div id="post-page" class="page-wrapper post-page">
     <site-hero :title="title" :subtitle="subtitle" :image="featureImage">
+      <span v-if="date" class="date-wrapper">
+        <strong>תאריך פרסום:</strong> {{ date }}
+      </span>
       <span
         v-if="author && $siteConfig.posts.displayAuthor"
         class="author-wrapper"
       >
-        <strong>Author:</strong> {{ author }}
-      </span>
-      <span v-if="date" class="date-wrapper">
-        <strong>Published on:</strong> {{ date }}
+        <strong>מאת:</strong> {{ author }}
       </span>
     </site-hero>
     <main-section :one-column-constrained="true">
       <template v-slot:default>
-        <div class="post-wrapper">
+        <div class="post-wrapper has-text-right">
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
-            <h6 class="subtitle is-size-4">
-              Related Posts
+            <h6 class="subtitle is-size-4 has-text-right">
+              פוסטים קשורים
             </h6>
             <!-- Related Posts -->
             <posts-grid :number="3" :category="category" :exclude="slug" />
