@@ -96,6 +96,7 @@ export default {
     position: absolute;
     top: 0;
     bottom: 0;
+    right: 0;
     animation: fillHorizontal 2s linear infinite;
   }
   &.subtitle {
