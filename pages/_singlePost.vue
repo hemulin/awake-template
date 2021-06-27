@@ -14,7 +14,7 @@
     <main-section :one-column-constrained="true">
       <template v-slot:default>
         <div class="post-wrapper has-text-right">
-          <markdown :markdown="$store.state.content" />
+          <markdown class="post-content" :markdown="$store.state.content" />
           <div class="other-posts">
             <h6 class="subtitle is-size-4 has-text-right">
               פוסטים קשורים
@@ -67,5 +67,9 @@ export default {
 <style scoped lang="scss">
 .edit-post {
   margin-bottom: 20px;
+}
+
+.post-content {
+  direction: rtl;
 }
 </style>
